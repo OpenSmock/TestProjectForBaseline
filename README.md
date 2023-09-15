@@ -1,8 +1,8 @@
-[![License](https://img.shields.io/github/license/OpenSmock/ProjectName.svg)](./LICENSE)
+[![License](https://img.shields.io/github/license/OpenSmock/TestProjectForBaseline.svg)](./LICENSE)
 
 <badges for separated tests scripts>
    
-[![Pharo 11 CI](https://github.com/OpenSmock/ProjectName/actions/workflows/Pharo11CI.yml/badge.svg)](https://github.com/OpenSmock/ProjectName/actions/workflows/Pharo11CI.yml)
+[![Pharo 11 CI](https://github.com/OpenSmock/TestProjectForBaseline/actions/workflows/Pharo11CI.yml/badge.svg)](https://github.com/OpenSmock/TestProjectForBaseline/actions/workflows/Pharo11CI.yml)
 
 # Test Project For Baseline
 
