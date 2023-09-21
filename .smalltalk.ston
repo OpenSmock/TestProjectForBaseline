@@ -3,7 +3,10 @@ SmalltalkCISpec {
     SCIMetacelloLoadSpec {
       #baseline : 'TestProjectForBaseline',
       #directory : 'src',
-      #platforms : [ #pharo ]
+      #platforms : [ #pharo ],
+      #onConflict : #useIncoming,                      
+      #onUpgrade : #useIncoming,    
+      #onWarningLog : true   
     }
   ],
   #testing : {
