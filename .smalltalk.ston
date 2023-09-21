@@ -1,12 +1,12 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : 'DependencyTestProjectForBaseline',
+      #baseline : 'TestProjectForBaseline',
       #platforms : [ #pharo ]
     }
   ],
   #testing : {
     #failOnZeroTests : false,
-    #packages : [ 'DependencyTestProjectForBaseline.*' ]
+    #packages : [ 'TestProjectForBaseline.*' ]
   }
 }
