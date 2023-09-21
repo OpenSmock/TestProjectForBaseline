@@ -13,14 +13,19 @@
 To install the project on your Pharo image you can just execute the following script:
 
 ```smalltalk
-Metacello new
-   baseline: 'TestProjectForBaseline';
-   repository: 'github://OpenSmock/TestProjectForBaseline:main/src';
-   load.
+[ Metacello new
+    baseline: 'TestProjectForBaseline';
+    repository: 'github://OpenSmock/TestProjectForBaseline:main/src';
+    onConflict:[ :ex :loaded :incoming | self useIncoming ];
+    onUpgrade: [ :ex :loaded :incoming | self useIncoming ];
+    ignoreImage;
+    load.
+] on: MCMergeOrLoadWarning do: [ :warning | warning load ].
 ```
 
 ## Dependencies
 
+- [DependencyTestProjectForBaseline](https://github.com/OpenSmock/DependencyTestProjectForBaseline)
 - Bloc
 - Toplo
 - OnBloc
