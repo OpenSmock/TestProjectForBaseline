@@ -22,8 +22,8 @@ BaselineOfTestProjectForBaseline >> baseline: spec [
 { #category : #baselines }
 BaselineOfTestProjectForBaseline >> dependencies: spec [
 
-	spec baseline: 'DependencieTestProjectForBaseline' with: [
-		spec repository: 'github://OpenSmock/DependencieTestProjectForBaseline:main' 
+	spec baseline: 'DependencyTestProjectForBaseline' with: [
+		spec repository: 'github://OpenSmock/DependencyTestProjectForBaseline:main' 
 	].
 
 	"specific tags of Bloc, OnBloc, Album and Toplo"
