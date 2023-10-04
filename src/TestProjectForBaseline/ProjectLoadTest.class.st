@@ -8,6 +8,8 @@ Class {
 ProjectLoadTest >> testIsLoadCorrectly [
 
 	"labordep : test if a old Bloc class is loaded and a recent Bloc class is not loaded (created after the requested tag of this project)"
-	self assert: (RGClassDefinition named: #BlElement) isClass.
-	self deny: (RGClassDefinition named: #BlLayoutResizerState) isClass.
+	self assert: (#BlElement asClassInEnvironment: Smalltalk globals ifAbsent: [nil]) notNil.
+	self assert: (#BlLayoutResizerState asClassInEnvironment: Smalltalk globals ifAbsent: [nil]) isNil.
+	
+	
 ]
