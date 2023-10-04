@@ -4,8 +4,8 @@ SmalltalkCISpec {
       #baseline : 'TestProjectForBaseline',
       #directory : 'src',
       #platforms : [ #pharo ],
-      #onConflict : #useIncoming,                      
-      #onUpgrade : #useIncoming,    
+      #onConflict : #useLoaded,                      
+      #onUpgrade : #useLoaded,    
       #onWarningLog : true   
     }
   ],
